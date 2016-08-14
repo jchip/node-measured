@@ -183,7 +183,7 @@ describe('Histogram#reset', function () {
       }
     }
 
-    histogram.reset();
+    histogram.reset({});
     json = histogram.toJSON();
 
     for (key in json) {

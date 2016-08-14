@@ -21,9 +21,7 @@ describe('Timer', function () {
     timer = new Timer({
       meter     : meter,
       histogram : histogram,
-      getTime   : function () {
-        return new Date().getTime();
-      }
+      hiRes     : false
     });
   });
 

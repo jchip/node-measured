@@ -11,9 +11,7 @@ describe('Stopwatch', function () {
   var clock;
   beforeEach(function () {
     clock = sinon.useFakeTimers();
-    watch = new Stopwatch({getTime: function () {
-      return new Date().getTime();
-    }});
+    watch = new Stopwatch({hiRes: false});
   });
 
   afterEach(function () {
